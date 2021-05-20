@@ -24,7 +24,7 @@ const LoginBtn = () => {
     return (
         <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
         <Navbar.Brand href="#home">
-            <img src={logo} width="300" height="300" className="d-inline-block align-top" alt="Matchboard logo" />
+            <img src={logo} width="120" height="80" className="d-inline-block align-top" alt="Matchboard logo" />
  </Navbar.Brand>
         <Nav className="mr-auto">
             <Nav.Link href="#features">Features</Nav.Link>
