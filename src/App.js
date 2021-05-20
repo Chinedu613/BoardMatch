@@ -1,11 +1,9 @@
-import './App.css';
-import GameSearchBar from './components/GameSearchBar';
+import React from 'react';
+import Header from './components/Header/Header.js'
 
 function App() {
   return (
-    <div>
-      <GameSearchBar />
-    </div>
+  <Header />
   );
 }
 
