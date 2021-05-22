@@ -1,14 +1,15 @@
 import React, { useState } from "react";
 import Atlas from "../../utils/Atlas";
-import {Form, Button} from "react-bootstrap";
+import { Form, Button, Table } from "react-bootstrap";
 
 function GameSearchBar() {
     const [search, setSearch] = useState("");
+    const [games, setGames] = useState([])
 
     const handleInputChange = event => {
-        setSearch({search: event.target.value});
+        setSearch({ search: event.target.value });
     };
-    
+
     const handleFormSubmit = event => {
         event.preventDefault();
         Atlas.searchGames(search)
@@ -20,22 +21,40 @@ function GameSearchBar() {
                     throw new Error(res.data.message);
                 }
                 else {
-                    console.log(res);
+                    setGames(res.data.games);
+                    console.log(games);
+                    games.map(data=>(
+                        console.log(data.name),
+                        console.log(data.id)
+                    ))
                 }
             })
     };
-    
+
     return (
-        <Form>
-            <Form.Group controlId="formBasicEmail">
-                <Form.Label>Search</Form.Label>
-                <Form.Control type="input" placeholder="Search" onChange={handleInputChange} />
-                <Form.Text className="text-muted">
-                    Search for a board game by name
+        <div className="container">
+            <Form>
+                <Form.Group controlId="formBasicEmail">
+                    <Form.Label>Search</Form.Label>
+                    <Form.Control type="input" placeholder="Search" onChange={handleInputChange} />
+                    <Form.Text className="text-muted">
+                        Search for a board game by name
                 </Form.Text>
-            </Form.Group>
-            <Button type="submit" onClick={handleFormSubmit}>Search</Button>
-        </Form>
+                </Form.Group>
+                <Button type="submit" onClick={handleFormSubmit}>Search</Button>
+            </Form>
+            <div>
+                <Table responsive variant="dark">
+                    {games.map(data=>(
+                        <tr key={data.id}>
+                            <img src={data.images.thumb}></img>
+                            <td>{data.name}</td>
+                        </tr>
+                    ))}
+                </Table>
+            </div>
+        </div>
+
     )
 }
 
