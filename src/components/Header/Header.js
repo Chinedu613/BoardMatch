@@ -29,7 +29,7 @@ const LoginBtn = () => {
  
           </Nav>
           <Nav>
-          <button onClick={ addModal } className="btn btn-primary m-4">
+          <button onClick={ addModal } className="btn btn-primary m-4" style={{backgroundColor: "black"}}>
               <Nav.Link href="/login">
               Login
               </Nav.Link>

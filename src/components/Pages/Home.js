@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Button } from "react-bootstrap";
 import logo from "./../../image/BoardMatchLogo2.png";
 
 function Home() {
@@ -7,21 +7,35 @@ function Home() {
     <div>
       <Container>
         <Row>
-            <Col >
+          <Col >
             <img
-            src={logo}
-            width="600"
-            height="350"
-            className="mx-auto d-block"
-            alt="Matchboard logo"
+              src={logo}
+              width="600"
+              height="350"
+              className="mx-auto d-block"
+              alt="Matchboard logo"
 
-          />
-            </Col>
+            />
+          </Col>
         </Row>
         <Row>
-            <Col className="center-block">
-                <span>Welcome to Matchboard</span>
-            </Col>
+          <Col className="center-block">
+            <h1 style={{textAlign: "center", color: "white"}}>Welcome to Matchboard</h1>
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+            <div style={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              paddingTop: "3%"
+            }}>
+              <Button block size="lg" style={{ backgroundColor: "black" }}>
+                Sign-Up
+             </Button>
+            </div>
+          </Col>
         </Row>
       </Container>
     </div>
