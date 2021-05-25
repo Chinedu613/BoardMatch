@@ -3,6 +3,7 @@ import { Navbar, Nav } from 'react-bootstrap';
 import logo from './../../image/BoardMatchLogo2.png';
 import LoginModal from '../LoginModal';
 import ModalService from '../../modules/modals/services/ModalService';
+import { NavLink } from 'react-router-dom';
 
 function Header() {
 
@@ -28,7 +29,11 @@ const LoginBtn = () => {
  
           </Nav>
           <Nav>
-          <button onClick={ addModal } className="btn btn-primary m-4 ">Login</button>
+          <button onClick={ addModal } className="btn btn-primary m-4">
+              <Nav.Link href="/login">
+              Login
+              </Nav.Link>
+              </button>
           </Nav>
       </Navbar>
     )
