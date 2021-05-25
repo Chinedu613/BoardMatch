@@ -1,18 +1,14 @@
 import React from 'react';
 import { Navbar, Nav } from 'react-bootstrap';
 import logo from './../../image/BoardMatchLogo2.png';
+import LoginModal from '../LoginModal';
+import ModalService from '../../modules/modals/services/ModalService';
 
 function Header() {
 
-const Search = () => {
-    return (
-        <form classNameName="d-flex">
-        <input classNameName="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-        <button classNameName="btn btn-outline-success" type="submit">Search</button>
-        </form>
-    )
+const addModal = () => {
+    ModalService.open(LoginModal)
 }
-
 const LoginBtn = () => {
     return (
         <form className="container-fluid justify-content-end">
@@ -32,10 +28,7 @@ const LoginBtn = () => {
  
           </Nav>
           <Nav>
-            <Nav.Link href="#deets">More deets</Nav.Link>
-            <Nav.Link eventKey={2} href="#memes">
-              Dank memes
-            </Nav.Link>
+          <button onClick={ addModal } className="btn btn-primary m-4">Login</button>
           </Nav>
       </Navbar>
     )
