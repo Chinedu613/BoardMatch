@@ -14,13 +14,13 @@ function Home() {
             height="350"
             className="mx-auto d-block"
             alt="Matchboard logo"
-            
+
           />
             </Col>
         </Row>
         <Row>
-            <Col className="center">
-                <p>Welcome to Matchboard</p>
+            <Col className="center-block">
+                <span>Welcome to Matchboard</span>
             </Col>
         </Row>
       </Container>
