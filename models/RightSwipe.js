@@ -1,3 +1,4 @@
+
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
@@ -44,8 +45,9 @@ RightSwipe.init(
     {
         sequelize,
         timestamps: false,
-        underscored: true,
-        modelName: 'Product',
+        underscored: false,
+        freezeTableName: true,
+        modelName: 'RightSwipe',        
     }
 );
 
