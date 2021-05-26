@@ -1,10 +1,11 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import Header from './components/Header/Header.js';
-import Home from "./components/Pages/Home";
-import Search from "./components/Pages/Search";
+import Home from "./Pages/Home";
+import Search from "./Pages/Search";
 import ModalRoot from "./modules/modals/components/ModalRoot.js";
-import Login from './components/Pages/Login';
+import Login from './Pages/Login';
+import Game from './Pages/Game';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Route exact path="/" component={Home}/>
       <Route exact path="/search" component={Search}/>
       <Route exact path="/login" component={Login}/>
+      <Route exact path="/game" component={Game}/>
       </Switch>
       </Router>
     </div>

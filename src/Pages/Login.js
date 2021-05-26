@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import {Form, Button} from 'react-bootstrap';
-import '../loginCss/styles.css';
+import '../components/loginCss/styles.css';
 
 function LoginForm() {
     const validEmailRegex =   RegExp(/^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i);
