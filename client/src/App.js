@@ -5,7 +5,7 @@ import Home from "./Pages/Home";
 import Search from "./Pages/Search";
 import ModalRoot from "./modules/modals/components/ModalRoot.js";
 import Login from './Pages/Login';
-import Matches from './Pages/Matches';
+import Game from './Pages/Game';
 
 function App() {
   const [auth, setAuth]=useState(false);
@@ -22,7 +22,7 @@ function App() {
       </Route>
       <Route exact path="/search" component={Search}/>
       <Route exact path="/login" component={Login}/>
-      <Route exact path="/matches" component={Matches}/>
+      <Route exact path="/game" component={Game}/>
       </Switch>
       </Router>
     </div>
