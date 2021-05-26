@@ -20,16 +20,16 @@ const LoginBtn = () => {
 
     return (
         <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-        <Navbar.Brand href="#home">
+        <Navbar.Brand href="/">
             <img src={logo} width="120" height="80" className="d-inline-block align-top" alt="Matchboard logo" />
  </Navbar.Brand>
         <Nav className="mr-auto">
-            <Nav.Link href="#features">Features</Nav.Link>
+            <Nav.Link href="/search">Search Games</Nav.Link>
             <Nav.Link href="#pricing">Pricing</Nav.Link>
  
           </Nav>
           <Nav>
-          <button onClick={ addModal } className="btn btn-primary m-4">
+          <button onClick={ addModal } className="btn btn-primary m-4" style={{backgroundColor: "black"}}>
               <Nav.Link href="/login">
               Login
               </Nav.Link>

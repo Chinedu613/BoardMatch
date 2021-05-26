@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Atlas from "../../utils/Atlas";
-import { Form, Button, Table } from "react-bootstrap";
+import { Form, Button, Table, Row, Col } from "react-bootstrap";
 
 function GameSearchBar() {
     const [search, setSearch] = useState("");
@@ -23,7 +23,7 @@ function GameSearchBar() {
                 else {
                     setGames(res.data.games);
                     console.log(games);
-                    games.map(data=>(
+                    games.map(data => (
                         console.log(data.name),
                         console.log(data.id)
                     ))
@@ -34,18 +34,19 @@ function GameSearchBar() {
     return (
         <div className="container">
             <Form>
-                <Form.Group controlId="formBasicEmail">
-                    <Form.Label>Search</Form.Label>
-                    <Form.Control type="input" placeholder="Search" onChange={handleInputChange} />
-                    <Form.Text className="text-muted">
-                        Search for a board game by name
+             
+                        <Form.Group controlId="formBasicEmail" >
+                            <Form.Control type="input" placeholder="Search" onChange={handleInputChange} />
+                            <Form.Text className="text-muted">
+                                Search for a board game by name
                 </Form.Text>
-                </Form.Group>
-                <Button type="submit" onClick={handleFormSubmit}>Search</Button>
+                        </Form.Group>
+
+                <Button type="submit" onClick={handleFormSubmit} style={{ backgroundColor: "black" }}>Search</Button>
             </Form>
             <div>
                 <Table responsive variant="dark">
-                    {games.map(data=>(
+                    {games.map(data => (
                         <tr key={data.id}>
                             <img src={data.images.thumb}></img>
                             <td>{data.name}</td>
