@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
-import logo from "../image/BoardMatchLogo2";
+import logo from "../image/BoardMatchLogo2.png";
 
 function Home() {
   return (
@@ -40,6 +40,6 @@ function Home() {
       </Container>
     </div>
   );
-}
+};
 
 export default Home;
