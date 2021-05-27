@@ -1,11 +1,11 @@
 import React, {useState} from 'react';
 import {Form, Button} from 'react-bootstrap';
+import Users from "../utils/Users";
 import '../components/loginCss/styles.css';
 
 function LoginForm() {
     const validEmailRegex =   RegExp(/^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i);
     const [userName, setUserName] = useState("");
-    // const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [userData, setUserData] = useState({});
 
@@ -26,13 +26,25 @@ function LoginForm() {
  const handleSubmit = (event) => {
      event.preventDefault();
      setUserData({username: userName, password: password})
+     Users.login(userData)
+     .then(res=>{
+         console.log(res)
+     }).catch(err=>{
+         console.log(err)
+     });
+
+     Users.getUsers()
+     .then(res=>{
+         console.log(res);
+     })
+
  }
 
  return (
     
      <div className="Login">
          <h1>Login</h1>
-         <Form onSubmit={handleSubmit}>
+         <Form>
              <div>
              <Form.Group size="lg" controlId="userName">
                  <Form.Label>User Name</Form.Label>
@@ -56,7 +68,6 @@ function LoginForm() {
                  <Form.Label>Password</Form.Label>
                  <Form.Control
                  type="password"
-                 value={password}
                  onChange={(e) => setPassword(e.target.value)}
                  />
              </Form.Group>
@@ -67,7 +78,7 @@ function LoginForm() {
                  alignItems: "center",
                  paddingTop: "3%"                
              }}>
-             <Button block size="lg" style={{backgroundColor: "black"}} disabled={(validateForm())}>
+             <Button block size="lg" style={{backgroundColor: "black"}} onClick={handleSubmit}>
                  Login
              </Button>
              </div>
