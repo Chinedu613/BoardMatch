@@ -1,9 +1,10 @@
 import React from 'react';
 import { Container, Row, Col } from "react-bootstrap";
+import "./style.css";
 
 export default function matchBox() {
     return (
-        <Container className="match">
+        <Container className="match align-self-center">
             <Row>
                 <Col sm={6} className="match__profile">
 
