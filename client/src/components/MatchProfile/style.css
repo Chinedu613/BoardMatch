@@ -1,9 +1,15 @@
+.profile_pic {
+    padding: 10px;
+}
+
 .profile_name {
     text-align: center;
     color: white;
+    padding: 7px;
 }
 
 .profile_bio {
     text-align: center;
     color: white;
+    padding: 7px;
 }

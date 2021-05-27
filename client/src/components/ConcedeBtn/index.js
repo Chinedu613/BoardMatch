@@ -3,6 +3,6 @@ import { Button } from "react-bootstrap";
 
 export default function concedeBtn() {
     return (
-        <Button variant="danger">Concede</Button>
+        <Button variant="danger" style={{marginTop: "20px"}}>Concede</Button>
     );
 }
