@@ -7,6 +7,7 @@ function LoginForm() {
     const [userName, setUserName] = useState("");
     // const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
+    const [userData, setUserData] = useState({});
 
     const validateForm = () => {
         // if (userName.length < 5) {
@@ -24,6 +25,7 @@ function LoginForm() {
 
  const handleSubmit = (event) => {
      event.preventDefault();
+     setUserData({username: userName, password: password})
  }
 
  return (
