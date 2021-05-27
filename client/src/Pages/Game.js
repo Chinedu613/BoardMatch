@@ -11,7 +11,7 @@ function Game() {
             <Col sm={3}>
               <Sidebar />
             </Col>
-            <Col sm={9}>
+            <Col sm={9} className="d-flex align-items-center">
               <MatchBox />
             </Col>
         </Row>
