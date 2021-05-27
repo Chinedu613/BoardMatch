@@ -1,6 +1,5 @@
 .match {
     align-self: center;
-    min-height: 20rem;
-    max-height: 20rem;
+    padding: 30px;
     background-color: #000;
 }

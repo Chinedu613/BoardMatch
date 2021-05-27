@@ -25,7 +25,7 @@ const LoginBtn = () => {
  </Navbar.Brand>
         <Nav className="mr-auto">
             <Nav.Link href="/search">Search Games</Nav.Link>
-            <Nav.Link href="#pricing">Pricing</Nav.Link>
+            <Nav.Link href="/game">Matches</Nav.Link>
  
           </Nav>
           <Nav>
