@@ -1,6 +1,8 @@
 import React from 'react';
 import { Container, Row, Col } from "react-bootstrap";
+import MatchedGame from '../MatchedGame';
 import "./style.css";
+
 
 export default function matchBox() {
     return (
@@ -10,7 +12,7 @@ export default function matchBox() {
 
                 </Col>
                 <Col sm={6} className="match__game">
-
+                    <MatchedGame />
                 </Col>
             </Row>
         </Container>
