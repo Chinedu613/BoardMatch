@@ -2,7 +2,7 @@ const path = require('path');
 const express = require('express');
 const session = require('express-session');
 const routes = require('./controllers');
-const sequelize = require('./src/config/connection');
+const sequelize = require('./config/connection');
 require('dotenv').config();
 
 
@@ -25,8 +25,9 @@ app.use(session(sess));
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use(express.static(path.join(__dirname, 'public')));
-
+if (process.env.NODE_ENV === "production") {
+  app.use(express.static("client/build"));
+}
 app.use(routes);
 
 sequelize.sync({ force: false }).then(() => {
