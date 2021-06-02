@@ -31,7 +31,7 @@ router.get('/', async (req,res)=>{
     try {
       console.log(req);
       const userData = await User.findOne({ where: { userName: req.body.username } });
-  
+      console.log(userData)
       if (!userData) {
         res
           .status(400)

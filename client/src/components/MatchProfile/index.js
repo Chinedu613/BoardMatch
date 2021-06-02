@@ -1,13 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import './style.css';
-
+import API from "../../utils/Users"
 
 export default function matchProfile() {
 
+    useEffect(() => {
+        
+    }, []);
 
-
-   
 
     return (
         <div>
@@ -18,7 +19,7 @@ export default function matchProfile() {
         </Row>
         <Row>
             <Col className="profile_name">
-            Match Name
+            Match Name 
             </Col>
         </Row>
         <Row>
