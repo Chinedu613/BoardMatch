@@ -5,6 +5,7 @@ import Home from "./components/Pages/Home";
 import Search from "./components/Pages/Search";
 import ModalRoot from "./modules/modals/components/ModalRoot.js";
 import Login from './components/Pages/Login';
+import SignUp from './components/Pages/SignUp';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Route exact path="/" component={Home}/>
       <Route exact path="/search" component={Search}/>
       <Route exact path="/login" component={Login}/>
+      <Route exact path="/signup" component={SignUp}/>
       </Switch>
       </Router>
     </div>
