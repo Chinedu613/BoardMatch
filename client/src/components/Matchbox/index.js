@@ -1,9 +1,11 @@
 import React from 'react';
 import { Container, Row, Col } from "react-bootstrap";
+import MatchedGame from '../MatchedGame';
 import "./style.css";
 import ConcedeBtn from "../ConcedeBtn"
 import PlayBtn from "../PlayBtn"
 import MatchProfile from '../MatchProfile';
+
 
 export default function matchBox() {
     return (
@@ -13,7 +15,7 @@ export default function matchBox() {
                     <MatchProfile></MatchProfile>
                 </Col>
                 <Col sm={6} className="match__game">
-
+                    <MatchedGame />
                 </Col>
             </Row>
             <Row>
