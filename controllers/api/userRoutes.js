@@ -56,6 +56,7 @@ router.get('/', async (req,res)=>{
       });
   
     } catch (err) {
+      console.log("hello");
       res.status(400).json(err);
     }
   });
