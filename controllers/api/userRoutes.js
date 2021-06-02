@@ -27,7 +27,8 @@ router.get('/', async (req,res)=>{
   
   router.post('/login', async (req, res) => {
     try {
-      const userData = await User.findOne({ where: { username: req.body.username } });
+      console.log(req);
+      const userData = await User.findOne({ where: { userName: req.body.username } });
   
       if (!userData) {
         res
@@ -48,7 +49,7 @@ router.get('/', async (req,res)=>{
       req.session.save(() => {
         req.session.user_id = userData.id;
         req.session.logged_in = true;
-        res.redirect('/');
+        //res.redirect('/');
         
       });
   
