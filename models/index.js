@@ -1,26 +1,26 @@
   
 // import models
-const User = require('./User');
-const RightSwipe = require('./RightSwipe');
+const User = require('.//User');
+const Swipe = require('./Swipe');
 
-RightSwipe.belongsTo(User, {
+Swipe.belongsTo(User, {
     foreignKey: "userId"
 });
 
-RightSwipe.belongsTo(User, {
-    foreignKey: "prospectId"
-});
+// Swipe.belongsTo(User, {
+//     foreignKey: "prospectId"
+// });
 
-User.hasMany(RightSwipe, {
+User.hasMany(Swipe, {
     foreignKey: "userId"
 });
 
-User.hasMany(RightSwipe, {
-    foreignKey: "prospectId"
-});
+// User.hasMany(Swipe, {
+//     foreignKey: "prospectId"
+// });
 
 module.exports = {
     User,
-    RightSwipe
+    Swipe
   };
 

@@ -16,7 +16,7 @@ User.init(
             primaryKey: true,
             autoIncrement: true
         },
-        userName: {
+        username: {
             type: DataTypes.STRING,
             allowNull: false
         },
@@ -47,6 +47,26 @@ User.init(
         skillLevel: {
             type: DataTypes.INTEGER,
             allowNull: false
+        },
+        email: {
+            type: DataTypes.STRING,
+            allowNull: true
+        },
+        testSize: {
+            type: DataTypes.INTEGER,
+            allowNull: true
+        },
+        minSkillLevel: {
+            type: DataTypes.INTEGER,
+            allowNull: true
+        },
+        userBio: {
+            type: DataTypes.STRING,
+            allowNull: true
+        },
+        city: {
+            type: DataTypes.STRING,
+            allowNull: true
         }
     },
     {
@@ -59,8 +79,8 @@ User.init(
         sequelize,
         timestamps: false,
         underscored: false,
-        freezeTableName: true,
-        modelName: 'user',
+        freezeTableName: false,
+        modelName: 'Users',
     }
 );
 
