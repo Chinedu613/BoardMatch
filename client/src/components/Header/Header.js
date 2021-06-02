@@ -34,6 +34,11 @@ const LoginBtn = () => {
               Login
               </Nav.Link>
               </button>
+              <button onClick={ addModal } className="btn btn-primary m-4" style={{backgroundColor: "black"}}>
+                  <Nav.Link href="/signup">
+                      Sign Up
+                      </Nav.Link>
+              </button>
           </Nav>
       </Navbar>
     )

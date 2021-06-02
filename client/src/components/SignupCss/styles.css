@@ -1,0 +1,22 @@
+@media all and (min-width: 480px) {
+    .SignUp {
+        padding: 60px 0;
+    }
+
+    .SignUp form {
+        margin: 0 auto;
+        max-width: 480px;
+    }
+    
+    .SignUp h1 {
+        text-align: center;
+        color: white;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 48px;
+    }
+
+    .SignUp label {
+        color: white;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+}
