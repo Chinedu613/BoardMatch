@@ -15,6 +15,10 @@ User.init(
             primaryKey: true,
             autoIncrement: true
         },
+        userName: {
+            type: DataTypes.STRING,
+            allowNull: false
+        },
         password: {
             type: DataTypes.STRING,
             allowNull: false
@@ -55,7 +59,7 @@ User.init(
         timestamps: false,
         underscored: false,
         freezeTableName: true,
-        modelName: 'User',
+        modelName: 'user',
     }
 );
 

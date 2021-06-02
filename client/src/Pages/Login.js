@@ -26,17 +26,13 @@ function LoginForm() {
  const handleSubmit = (event) => {
      event.preventDefault();
      setUserData({username: userName, password: password})
+     console.log(userData);
      Users.login(userData)
      .then(res=>{
          console.log(res)
      }).catch(err=>{
          console.log(err)
      });
-
-     Users.getUsers()
-     .then(res=>{
-         console.log(res);
-     })
 
  }
 
