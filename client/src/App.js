@@ -7,6 +7,9 @@ import ModalRoot from "./modules/modals/components/ModalRoot.js";
 import Login from './Pages/Login';
 import Game from './Pages/Game';
 import SignUp from './Pages/SignUp';
+import { QueryClient, QueryClientProvider, useQuery } from 'react-query'
+
+const queryClient = new QueryClient()
 
 function App() {
   const [auth, setAuth]=useState(false);
@@ -14,6 +17,7 @@ function App() {
 
   return (
     <div>
+      <QueryClientProvider client={queryClient}>
       <ModalRoot />
       <Router>
       <Header />
@@ -27,6 +31,7 @@ function App() {
       <Route exact path="/game" component={Game}/>
       </Switch>
       </Router>
+      </QueryClientProvider>
     </div>
   );
 }

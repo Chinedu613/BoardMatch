@@ -1,14 +1,18 @@
 import React, { useEffect, useState } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import './style.css';
-import API from "../../utils/Users"
+import { useQuery } from 'react-query';
 
-export default function matchProfile() {
+const fetchUsers = async () => {
+    const res = await fetch('api/user');
+    return res.json();
+}
 
-    useEffect(() => {
-        
-    }, []);
 
+export default function MatchProfile() {
+
+    const { data, status } = useQuery('users', fetchUsers);
+    console.log(data);
 
     return (
         <div>
@@ -19,12 +23,12 @@ export default function matchProfile() {
         </Row>
         <Row>
             <Col className="profile_name">
-            Match Name 
+            {}
             </Col>
         </Row>
         <Row>
             <Col className="profile_bio">
-            Short Bio
+            Skill Level: {}
             </Col>
         </Row>
         </div>
