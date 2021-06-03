@@ -27,11 +27,11 @@ router.get('/', async (req,res)=>{
   });
   
   
-  router.post('/login', async (req, res) => {
+ router.post('/login', async (req, res) => {
     try {
-      console.log(req);
-      const userData = await User.findOne({ where: { userName: req.body.username } });
-      console.log(userData)
+      const userData = await User.findOne({ where: { userName: req.body.username }});
+      
+      console.log(userData);
       if (!userData) {
         res
           .status(400)
@@ -50,13 +50,12 @@ router.get('/', async (req,res)=>{
   
       req.session.save(() => {
         req.session.user_id = userData.id;
-        req.session.logged_in = true;
-        //res.redirect('/');
-        
+        req.session.logged_in = true;   
       });
+      res.send(true);
   
     } catch (err) {
-      console.log("hello");
+      console.log(err);
       res.status(400).json(err);
     }
   });
