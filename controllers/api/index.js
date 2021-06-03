@@ -7,6 +7,6 @@ const oldMatchRoutes = require(".");
 router.use("/users", userRoutes);
 router.use("/swipes", swipeRoutes);
 router.use("/matchtransactions", matchTransactionRoutes);
-router.use("/oldmatches", oldMatchRoutes);
+//router.use("/oldmatches", oldMatchRoutes);
 
 module.exports = router;
