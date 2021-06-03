@@ -7,20 +7,7 @@ function LoginForm() {
     const validEmailRegex =   RegExp(/^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i);
     const [userName, setUserName] = useState("");
     const [password, setPassword] = useState("");
-    const [userData, setUserData] = useState({});
-
-    const validateForm = () => {
-        // if (userName.length < 5) {
-        //     return 'Your User Name must be at least 5 characters long!';
-        // } 
-        //  if (email === validEmailRegex) {
-        //     return 'Email is not valid!';
-        // } if (password.length < 8 ) {
-        //     return 'Password must be at least 8 characters long!';
-        // } 
-        // return "";
-        return userName.length > 0 && password.length > 0;
-    }          
+    const [userData, setUserData] = useState({});         
 
 
  const handleSubmit = (event) => {
@@ -30,6 +17,9 @@ function LoginForm() {
      Users.login(userData)
      .then(res=>{
          console.log(res)
+         if(res.data===true){
+
+         }
      }).catch(err=>{
          console.log(err)
      });
@@ -51,15 +41,6 @@ function LoginForm() {
                  onChange={(e) => setUserName(e.target.value)}
                  />
              </Form.Group>
-             {/* <Form.Group size="lg" controId="email">
-             <Form.Label>Email</Form.Label>
-             <Form.Control
-             autoFocus
-             type="email"
-             value={email}
-             onChange={(e) => setEmail(e.target.value)}
-             />
-             </Form.Group> */}
              <Form.Group size="lg" controlId="password">
                  <Form.Label>Password</Form.Label>
                  <Form.Control

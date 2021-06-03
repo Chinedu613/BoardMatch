@@ -7,7 +7,7 @@ const userData = [
         lat: 40.745255,
         lon: -74.034775,
         favoriteGame: "Dungeons and Dragons",
-        skillLevel: 1,        
+        skillLevel: 1        
     },
     {
         userName: "kyleB",
@@ -15,7 +15,7 @@ const userData = [
         lat: 34.155834,
         lon: -119.202789,
         favoriteGame: "Dungeons and Dragons",
-        skillLevel: 2,
+        skillLevel: 2
     },
     {
         userName: "chinC",
@@ -23,7 +23,7 @@ const userData = [
         lat: 42.933334,
         lon: -76.566666,
         favoriteGame: "Dungeons and Dragons",
-        skillLevel: 4,
+        skillLevel: 4
     },
     {
         userName: "marcoE",
@@ -31,7 +31,7 @@ const userData = [
         lat: 42.095554,
         lon: -79.238609,
         favoriteGame: "Dungeons and Dragons",
-        skillLevel: 3,
+        skillLevel: 3
     },
     {
         userName: "alexC",
@@ -39,7 +39,7 @@ const userData = [
         lat: 38.846668,
         lon: -91.948059,
         favoriteGame: "Dungeons and Dragons",
-        skillLevel: 3,
+        skillLevel: 3
     },
     {
         userName: "andreS",
@@ -47,7 +47,7 @@ const userData = [
         lat: 41.392502,
         lon: -81.534447,
         favoriteGame: "Settlers of Catan",
-        skillLevel: 2,
+        skillLevel: 2
     },
     {
         userName: "andrewH",
@@ -55,7 +55,7 @@ const userData = [
         lat: 27.192223,
         lon: -80.243057,
         favoriteGame: "Settlers of Catan",
-        skillLevel: 4,
+        skillLevel: 4
     },
     {
         userName: "peteR",
@@ -63,10 +63,10 @@ const userData = [
         lat: 31.442778,
         lon: -100.450279,
         favoriteGame: "Settlers of Catan",
-        skillLevel: 5,
+        skillLevel: 5
     }
 ]
 
-const seedUsers = () => User.bulkCreate(userData);
+const seedUsers = () => User.bulkCreate(userData, {individualHooks: true});
 
 module.exports = seedUsers;
