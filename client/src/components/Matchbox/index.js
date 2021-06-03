@@ -7,7 +7,7 @@ import PlayBtn from "../PlayBtn"
 import MatchProfile from '../MatchProfile';
 
 
-export default function matchBox() {
+export default function MatchBox() {
     return (
         <Container className="match align-self-center">
             <Row>
