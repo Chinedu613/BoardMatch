@@ -110,21 +110,21 @@ const swipeData = [
         userId: 1,
         prospectId: 54,
         distance: 21.69,
-        message: "NULL",
+        message: "",
         status: "invited",
         game: "Dungeons and Dragons"
     }, {
         userId: 23,
         prospectId: 1,
         distance: 39.78,
-        message: "NULL",
+        message: "",
         status: "matched",
         game: "Dungeons and Dragons"
     }, {
         userId: 61,
         prospectId: 1,
         distance: 58.82,
-        message: "NULL",
+        message: "",
         status: "declined",
         game: "Dungeons and Dragons"
     }, {

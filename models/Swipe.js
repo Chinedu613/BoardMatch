@@ -24,7 +24,7 @@ Swipe.init(
             type: DataTypes.INTEGER,
         },
         distance: {
-            type: DataTypes.FLOAT,       
+            type: DataTypes.FLOAT(10, 2),       
         },
         message: {
             type: DataTypes.STRING, 

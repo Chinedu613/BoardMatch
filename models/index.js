@@ -2,6 +2,8 @@
 // import models
 const User = require('.//User');
 const Swipe = require('./Swipe');
+const MatchTransaction = require("./User");
+const MatchRecord = require("./Swipe");
 
 Swipe.belongsTo(User, {
     foreignKey: "userId"
@@ -21,6 +23,8 @@ User.hasMany(Swipe, {
 
 module.exports = {
     User,
-    Swipe
+    Swipe,
+    MatchTransaction,
+    MatchRecord
   };
 

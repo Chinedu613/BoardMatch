@@ -25,7 +25,7 @@ User.init(
             allowNull: false
         },
         lat: {
-            type: DataTypes.DECIMAL,
+            type: DataTypes.DECIMAL(10, 4),
             allowNull: false,
             defaultValue: 0.0,
             validate: {
@@ -33,7 +33,7 @@ User.init(
             }
         },
         lon: {
-            type: DataTypes.DECIMAL,
+            type: DataTypes.DECIMAL(10, 4),
             allowNull: false,
             defaultValue: 0.0,
             validate: {
