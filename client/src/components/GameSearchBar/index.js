@@ -34,13 +34,13 @@ function GameSearchBar() {
     return (
         <div className="container">
             <Form>
-             
-                        <Form.Group controlId="formBasicEmail" >
-                            <Form.Control type="input" placeholder="Search" onChange={handleInputChange} />
-                            <Form.Text className="text-muted">
-                                Search for a board game by name
+
+                <Form.Group controlId="formBasicEmail" >
+                    <Form.Control type="input" placeholder="Search" onChange={handleInputChange} />
+                    <Form.Text className="text-muted">
+                        Search for a board game by name
                 </Form.Text>
-                        </Form.Group>
+                </Form.Group>
 
                 <Button type="submit" onClick={handleFormSubmit} style={{ backgroundColor: "black" }}>Search</Button>
             </Form>

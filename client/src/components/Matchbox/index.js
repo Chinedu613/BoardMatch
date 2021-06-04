@@ -11,17 +11,14 @@ export default function MatchBox() {
     return (
         <Container className="match align-self-center">
             <Row>
-                <Col sm={6} className="match__profile">
+                <Col className="match__profile">
                     <MatchProfile></MatchProfile>
                 </Col>
-                <Col sm={6} className="match__game">
-                    <MatchedGame />
-                </Col>
+
             </Row>
             <Row>
-                <Col className="text-center"><ConcedeBtn></ConcedeBtn></Col>
                 <Col className="text-center"><PlayBtn></PlayBtn></Col>
-
+                <Col className="text-center"><ConcedeBtn></ConcedeBtn></Col>
             </Row>
         </Container>
     )
