@@ -8,7 +8,6 @@ import axios from 'axios';
 
 
 
-
 export default function MatchProfile() {
 
     const { data, isLoading, error } = useQuery('users', () => axios.get('/api/users').then((res) => res.json()));
