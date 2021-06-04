@@ -1,6 +1,5 @@
 import React from 'react';
 import { Container, Row, Col } from "react-bootstrap";
-import MatchedGame from '../MatchedGame';
 import "./style.css";
 import ConcedeBtn from "../ConcedeBtn"
 import PlayBtn from "../PlayBtn"
