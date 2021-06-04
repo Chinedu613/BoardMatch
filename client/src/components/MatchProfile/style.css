@@ -13,3 +13,15 @@
     color: white;
     padding: 7px;
 }
+
+.matched__game-title {
+    text-align: center;
+    color: white;
+    padding: 7px;
+}
+
+.skill_level {
+    text-align: center;
+    color: white;
+    padding: 7px;
+}
