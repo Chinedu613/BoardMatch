@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import {Form, Button} from 'react-bootstrap';
+import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
 import Users from "../utils/Users";
 import '../components/loginCss/styles.css';
 
@@ -8,14 +9,16 @@ function LoginForm() {
     const [userName, setUserName] = useState("");
     const [password, setPassword] = useState("");
     const [userData, setUserData] = useState({});
+    const [loggedIn, setLoggedIn] = useState(false);
 
  const handleSubmit = (event) => {
      event.preventDefault();
      setUserData({username: userName, password: password})
-     console.log(userData);
      Users.login(userData)
      .then(res=>{
-         console.log(res)
+         if(res.data===true){
+             setLoggedIn(true);
+         }
      }).catch(err=>{
          console.log(err)
      });
@@ -23,8 +26,8 @@ function LoginForm() {
  }
 
  return (
-    
      <div className="Login">
+         {(loggedIn && <Redirect to='/game'/>)}
          <h1>Login</h1>
          <Form>
              <div>

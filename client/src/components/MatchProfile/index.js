@@ -4,7 +4,7 @@ import './style.css';
 import { useQuery } from 'react-query';
 
 const fetchUsers = async () => {
-    const res = await fetch('api/user');
+    const res = await fetch('api/users');
     return res.json();
 }
 

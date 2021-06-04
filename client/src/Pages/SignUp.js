@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import {Form, Button} from 'react-bootstrap';
+import Users from '../utils/Users'
 import '../components/SignupCss/styles.css';
 
 export default class SignUpForm extends Component {
@@ -7,9 +8,8 @@ export default class SignUpForm extends Component {
         super(props);
         this.state = {
             username: "",
-            email: "",
             password: "",
-            age: null, 
+            skill: null, 
             errormessage: ""
         };
     }
@@ -34,13 +34,19 @@ export default class SignUpForm extends Component {
     } if (this.state.password === "") {
         err = <strong>Your password cannot be blank!</strong>
     }
-     if (this.state.age !== Number) {
-        err = <strong>Your  age must be a number!</strong>
+     if (this.state.skill !== Number) {
+        err = <strong>Your skill level must be a number!</strong>
     }
     this.setState({errormessage: err});
        console.log("password is" + this.state.password);
        console.log("username is" + this.state.username);
        console.log(this.state);
+        Users.saveUser({
+            username:this.state.username,
+            password:this.state.password,
+            skillLevel:this.state.skill,
+            favoriteGame:"Catan"
+        });
     }
     
     render() {
@@ -61,17 +67,6 @@ export default class SignUpForm extends Component {
                               />
                               {this.state.errormessage}
                           </Form.Group>
-                          <Form.Group size="lg" controlId="email">
-                              <Form.Label>Enter your email address:</Form.Label>
-                              <Form.Control
-                              autoFocus
-                              type="text"
-                              name="email"
-                              value={this.state.email}
-                              onChange={this.formValidation}
-                              />
-                        
-                          </Form.Group>
                            <Form.Group size="lg" controlId="password">
                               <Form.Label>Enter your password:</Form.Label>
                               <Form.Control
@@ -83,13 +78,13 @@ export default class SignUpForm extends Component {
                               />
                              {this.state.errormessage}
                           </Form.Group>
-                          <Form.Group size="lg" controlId="age">
-                              <Form.Label>Enter your age:</Form.Label>
+                          <Form.Group size="lg" controlId="skill">
+                              <Form.Label>Enter your skill level:</Form.Label>
                               <Form.Control
                               autoFocus
-                              type="age"
-                              name="age"
-                              value={this.state.age}
+                              type="skill"
+                              name="skill"
+                              value={this.state.skill}
                               onChange={this.formValidation}
                               />
                               {this.state.errormessage}
@@ -101,7 +96,7 @@ export default class SignUpForm extends Component {
                           alignItems: "center",
                           paddingTop: "3%"
                       }}>
-                          <Button block size="lg" style={{backgroundColor: "black"}}>
+                          <Button block size="lg" style={{backgroundColor: "black"}} onClick={this.handleSubmit}>
                               Create
                           </Button> 
                       </div>
