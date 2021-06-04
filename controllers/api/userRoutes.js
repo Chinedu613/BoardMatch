@@ -11,16 +11,19 @@ router.get('/', async (req,res)=>{
       res.status(400).json(err);
     }
   })
+
+  router.get('/auth', (req,res)=>{
+    res.send(req.session.logged_in);
+  })
   
   router.post('/', async (req, res) => {
     try {
+      console.log(req.body);
       const userData = await User.create(req.body);
-      req.session.save(() => {
         req.session.user_id = userData.id;
         req.session.logged_in = true;
         
         res.status(200).json(userData);
-      });
     } catch (err) {
       res.status(400).json(err);
     }
@@ -47,11 +50,9 @@ router.get('/', async (req,res)=>{
           .json({ message: 'Incorrect username or password, please try again' });
         return;
       }
-  
-      req.session.save(() => {
-        req.session.user_id = userData.id;
-        req.session.logged_in = true;   
-      });
+      req.session.user_id = userData.id;
+      req.session.logged_in = true;   
+      
       res.send(true);
   
     } catch (err) {
@@ -63,6 +64,7 @@ router.get('/', async (req,res)=>{
   router.post('/logout', (req, res) => {
     if (req.session.logged_in) {
       req.session.destroy(() => {
+        console.alert("LOGGED OUT");
         res.status(204).end();
       });
     } else {
