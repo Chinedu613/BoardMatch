@@ -25,8 +25,8 @@ function App() {
   return (
     <div>
       <QueryClientProvider client={queryClient}>
-      {authorization ? <LogHeader /> : <Header/>}
       <Router>
+      {authorization ? <LogHeader /> : <Header/>}
       <Switch>
       <Route exact path="/">
          <Home/>
