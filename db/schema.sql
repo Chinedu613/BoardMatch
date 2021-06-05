@@ -16,6 +16,7 @@ CREATE TABLE Users (
     maxSkillLevel integer,
     userBio varchar(200),
     city varchar(50),
+    gameImage varchar(200),
     PRIMARY KEY (id)
 );
 
