@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col, Button } from 'react-bootstrap';
 import './style.css';
 import { useQuery } from 'react-query';
 import Users from '../../utils/Users';
@@ -10,13 +10,17 @@ import axios from 'axios';
 
 export default function MatchProfile() {
 
-    const { data, isLoading, error } = useQuery('users', () => axios.get('/api/users').then((res) => res.json()));
+
+    const { data, isLoading, error } = useQuery('users', () => axios.get('/api/users').then((res) => res.data));
     if (isLoading) return (<div style={{ color: "white" }}>Is Loading...</div>)
     if (error) return (<div style={{ color: "white" }}>An error has occurred:</div>)
 
-    console.log(data)
+    
+    let matchData = data[Math.floor(Math.random() * data.length)];
+   
 
-    const match = data[Math.floor(Math.random() * data.length)]
+
+    
 
     return (
         <div>
@@ -32,19 +36,22 @@ export default function MatchProfile() {
             </Row>
             <Row>
                 <Col className="profile_name">
-                    <h3>{match.username}</h3>
+                    <h3>{matchData.username}</h3>
                 </Col>
                 <Col className="matched__game-title">
-                    <h3>{match.favoriteGame}</h3>
+                    <h3>{matchData.favoriteGame}</h3>
                 </Col>
             </Row>
             <Row>
                 <Col className="profile_bio">
-                    Bio: {match.userBio}
+                    Bio: {matchData.userBio}
                 </Col>
                 <Col className="skill_level">
-                    Skill Level: {match.skillLevel}
+                    Skill Level: {matchData.skillLevel}
                 </Col>
+            </Row>
+            <Row>
+                {/* <Button variant="danger" style={{ marginTop: "20px" }}>Concede</Button> */}
             </Row>
         </div>
     );
