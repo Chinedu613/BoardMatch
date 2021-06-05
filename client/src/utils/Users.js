@@ -17,13 +17,20 @@ export default {
   saveUser: function(userData) {
     return axios.post("/api/users", userData);
   },
+  //Login route for User
   login: function(userData){
     return axios.post("/api/users/login", userData)
   },
-  logout: function(userData){
-    return axios.post("/api/users/logout", userData)
+  //Logout route
+  logout: function(){
+    return axios.post("/api/users/logout")
   },
+  //User authentication route checking session
   auth: function(){
     return axios.get("/api/users/auth")
+  },
+  //Update favorite game route for user
+  updateGame: function(gameData){
+    return axios.put("/api/users/update", gameData)
   }
 };

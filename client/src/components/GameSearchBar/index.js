@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Atlas from "../../utils/Atlas";
-import { Form, Button, Table, Row, Col } from "react-bootstrap";
+import Users from "../../utils/Users";
+import { Form, Button, Table } from "react-bootstrap";
 
 function GameSearchBar() {
     const [search, setSearch] = useState("");
@@ -22,14 +23,16 @@ function GameSearchBar() {
                 }
                 else {
                     setGames(res.data.games);
-                    console.log(games);
-                    games.map(data => (
-                        console.log(data.name),
-                        console.log(data.id)
-                    ))
                 }
             })
     };
+
+    const handleGame = event => {
+        const gameTitle = event.target.value;
+        Users.updateGame({ game: gameTitle }).then(res => {
+            console.log(res);
+        })
+    }
 
     return (
         <div className="container">
@@ -46,12 +49,15 @@ function GameSearchBar() {
             </Form>
             <div>
                 <Table responsive variant="dark">
-                    {games.map(data => (
-                        <tr key={data.id}>
-                            <img src={data.images.thumb}></img>
-                            <td>{data.name}</td>
-                        </tr>
-                    ))}
+                    <tbody>
+                        {games.map(data => (
+                            <tr key={data.id}>
+                                <td><img src={data.images.thumb}></img></td>
+                                <td>{data.name}</td>
+                                <td><button value={data.name} onClick={handleGame}>Set as Favorite</button></td>
+                            </tr>
+                        ))}
+                    </tbody>
                 </Table>
             </div>
         </div>

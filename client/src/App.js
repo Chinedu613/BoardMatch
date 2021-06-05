@@ -1,25 +1,32 @@
 import React, {useState, useEffect} from 'react';
-import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import Header from './components/Header/Header.js';
 import Home from "./Pages/Home";
 import Search from "./Pages/Search";
-import ModalRoot from "./modules/modals/components/ModalRoot.js";
 import Login from './Pages/Login';
 import Game from './Pages/Game';
 import SignUp from './Pages/SignUp';
+import LogHeader from "./components/LogHeader";
 import Users from "./utils/Users";
 import { QueryClient, QueryClientProvider, useQuery } from 'react-query'
 
 const queryClient = new QueryClient()
 
 function App() {
+  const [authorization, setAuth]= useState(false);
+
+  useEffect(()=>{
+    Users.auth().then(res=>{
+      console.log(res);
+      setAuth(res.data);
+    })
+  })
 
   return (
     <div>
       <QueryClientProvider client={queryClient}>
-      <ModalRoot />
+      {authorization ? <LogHeader /> : <Header/>}
       <Router>
-      <Header />
       <Switch>
       <Route exact path="/">
          <Home/>

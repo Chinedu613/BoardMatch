@@ -66,7 +66,20 @@ router.get('/', async (req,res)=>{
       req.session.user_id = userData.id;
       req.session.logged_in = true;   
       
-      res.send(true);
+      res.send(req.session.logged_in);
+  
+    } catch (err) {
+      console.log(err);
+      res.status(400).json(err);
+    }
+  });
+
+  router.put('/update', async (req, res) => {
+    try {
+      const userData = await User.findOne({ where: { id: req.session.user_id }});
+      userData.update({favoriteGame:req.body.game});
+      
+      res.send(userData);
   
     } catch (err) {
       console.log(err);
@@ -75,9 +88,10 @@ router.get('/', async (req,res)=>{
   });
   
   router.post('/logout', (req, res) => {
+    console.log(req.session.logged_in);
     if (req.session.logged_in) {
+      console.log("LOGGED OUT***************")
       req.session.destroy(() => {
-        console.alert("LOGGED OUT");
         res.status(204).end();
       });
     } else {
