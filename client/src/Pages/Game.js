@@ -5,8 +5,6 @@ import Sidebar from "../components/Sidebar";
 
 function Game() {
   
-
-
   return (
     <div>
       <Container fluid>

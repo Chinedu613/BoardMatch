@@ -12,6 +12,10 @@ router.get('/', async (req,res)=>{
     }
   })
 
+  router.get('/auth', (req,res)=>{
+    res.send(req.session.logged_in);
+  }) 
+
   router.get('/:id', async (req, res) => {
     try {
       const userData = await User.findByPk(req.params.id)
@@ -24,10 +28,6 @@ router.get('/', async (req,res)=>{
       res.status(500).json(err);
     }
   });
-
-  router.get('/auth', (req,res)=>{
-    res.send(req.session.logged_in);
-  })
   
   router.post('/', async (req, res) => {
     try {
