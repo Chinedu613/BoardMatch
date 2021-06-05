@@ -20,7 +20,7 @@ function Home() {
         </Row>
         <Row>
           <Col className="center-block">
-            <h1 style={{textAlign: "center", color: "white"}}>Welcome to Matchboard</h1>
+            <h1 style={{textAlign: "center", color: "white"}}>Welcome to Match Board</h1>
           </Col>
         </Row>
         <Row>
