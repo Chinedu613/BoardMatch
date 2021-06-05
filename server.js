@@ -25,9 +25,9 @@ app.use(session(sess));
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-if (process.env.NODE_ENV === "production") {
+// if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
-}
+// }
 
 app.use(routes);
 
