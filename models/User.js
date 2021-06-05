@@ -67,6 +67,10 @@ User.init(
         city: {
             type: DataTypes.STRING,
             allowNull: true
+        },
+        gameImage: {
+            type: DataTypes.STRING,
+            allowNull: true
         }
     },
     {
