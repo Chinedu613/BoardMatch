@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import {Form, Button} from 'react-bootstrap';
-import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
+import {Redirect} from 'react-router-dom';
 import Users from "../utils/Users";
 import '../components/loginCss/styles.css';
 
@@ -18,6 +18,7 @@ function LoginForm() {
      .then(res=>{
          if(res.data===true){
              setLoggedIn(true);
+             window.location.reload();
          }
      }).catch(err=>{
          console.log(err)

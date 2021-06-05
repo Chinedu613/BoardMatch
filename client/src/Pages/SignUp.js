@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import {Form, Button} from 'react-bootstrap';
+import { Redirect } from 'react-router-dom';
 import Users from '../utils/Users'
 import '../components/SignupCss/styles.css';
 
@@ -9,8 +10,9 @@ export default class SignUpForm extends Component {
         this.state = {
             username: "",
             password: "",
-            skill: null, 
-            errormessage: ""
+            skill: 0, 
+            errormessage: "",
+            created: false
         };
     }
 
@@ -47,12 +49,14 @@ export default class SignUpForm extends Component {
             skillLevel:this.state.skill,
             favoriteGame:"Catan"
         });
+     this.setState({created:true});   
     }
     
     render() {
     
         return (
               <div className="SignUp">
+                  {this.state.created && <Redirect to="/search"/>}
                   <h1>Sign Up</h1>
                   <form onSubmit={this.handleSubmit}>
                       <div>
