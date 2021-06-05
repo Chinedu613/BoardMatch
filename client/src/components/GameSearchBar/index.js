@@ -54,7 +54,7 @@ function GameSearchBar() {
                             <tr key={data.id}>
                                 <td><img src={data.images.thumb}></img></td>
                                 <td>{data.name}</td>
-                                <td><button value={data.name} onClick={handleGame}>Set as Favorite</button></td>
+                                <td><button className="btn btn-dark" value={data.name} onClick={handleGame}>Set as Favorite</button></td>
                             </tr>
                         ))}
                     </tbody>
