@@ -2,6 +2,8 @@
 // import models
 const User = require('.//User');
 const Swipe = require('./Swipe');
+const MatchTransaction = require("./MatchTransaction");
+const MatchRecord = require("./MatchRecord");
 
 Swipe.belongsTo(User, {
     foreignKey: "userId"
