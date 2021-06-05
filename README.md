@@ -1,70 +1,75 @@
-# Getting Started with Create React App
+![License Badge](https://img.shields.io/static/v1?label=License&message=MIT&color=blue)
+# Match Board
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Table of Contents
 
-## Available Scripts
+* [Description](#description)
+* [Technologies](#technologies-used)
+* [Usage](#usage)
+* [Contribution Guidelines](#contribution-guidelines)
+* [License](#license)
+* [Contributors](#contributors)
+* [Contact](#contact)
+    
+## Description
 
-In the project directory, you can run:
+Are you looking to meet new people to play boardgames with or wanting to add another member to your group for monthly board game night? Maybe you just want to search for a new game to play with your friends.
+Then try MatchBoard!
+MatchBoard is the app you need to find your new group of friends to play that late night game of Monopoly with or have an epic campaign of Dungeons and Dragons!
 
-### `npm start`
+![Screenshot 1](./images/screenshot1.PNG)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+![Screenshot 2](./images/screenshot2.PNG)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+![Screenshot 3](./images/screenshot3.PNG)
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Technologies Used
 
-### `npm run build`
+React
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Node.js
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+MySQL
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Sequelize
 
-### `npm run eject`
+Express
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Bootstrap
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Usage
+MatchBoard is a web application aimed at connecting users based on board game preferences and interests. Users select tabletop games they are actively playing or trying to find people to play with. This data then dictates which other gamers they are likely to match with. 
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Contribution Guidelines
+No contributions permitted
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## License
+*This project uses the MIT license.*
 
-## Learn More
+*Read more about it by clicking the link below*
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+[License Link](https://choosealicense.com/licenses/mit/)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Contributors
+[Kyle Burt Github](https://github.com/burtk33)
 
-### Code Splitting
+[Chinedu Chukwuani Github](https://github.com/Chinedu613)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+[Marco Estrada Github](https://github.com/MarcoC007)
 
-### Analyzing the Bundle Size
+[Mike Ruane Github](https://github.com/geotecdev)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+[Alex Chisar Github](https://github.com/Arivas00)
 
-### Making a Progressive Web App
+## Contact
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Kyle Burt: burtk33@gmail.com
 
-### Advanced Configuration
+Chinedu Chukwuani: cchukwuani@gmail.com
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Marco Estrada: marco2110estrada@gmail.com
 
-### Deployment
+Mike Ruane: mikeruanedev@gmail.com
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Alex Chisar: a.chisar00@gmail.com
