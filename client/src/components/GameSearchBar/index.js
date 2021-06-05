@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Atlas from "../../utils/Atlas";
 import Users from "../../utils/Users";
 import { Form, Button, Table } from "react-bootstrap";
+import './style.css';
 
 function GameSearchBar() {
     const [search, setSearch] = useState("");
@@ -52,9 +53,9 @@ function GameSearchBar() {
                     <tbody>
                         {games.map(data => (
                             <tr key={data.id}>
-                                <td><img src={data.images.thumb}></img></td>
-                                <td>{data.name}</td>
-                                <td><button className="btn btn-dark" value={data.name} onClick={handleGame}>Set as Favorite</button></td>
+                                <td><div className="game_image"><img src={data.images.thumb}></img></div></td>
+                                <td><div className="game_name"><h4>{data.name}</h4></div></td>
+                                <td><button className="game_favorite" value={data.name} onClick={handleGame}>Set as Favorite</button></td>
                             </tr>
                         ))}
                     </tbody>
