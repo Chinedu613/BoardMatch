@@ -12,8 +12,7 @@ const userData = [{
 	minSkillLevel: 2,
 	maxSkillLevel: 5,
 	userBio: "",
-	City: "Pittsburgh, PA",
-	gameImage: ""
+	City: "Pittsburgh, PA"
 }, {
 	username: "kyleB",
 	password: "123",
@@ -26,8 +25,7 @@ const userData = [{
 	minSkillLevel: 1,
 	maxSkillLevel: 5,
 	userBio: "",
-	City: "Philadelphia, PA",
-	gameImage: ""
+	City: "Philadelphia, PA"
 }, {
 	username: "chinC",
 	password: "123",
@@ -40,8 +38,7 @@ const userData = [{
 	minSkillLevel: 1,
 	maxSkillLevel: 5,
 	userBio: "",
-	City: "Pittsburgh, PA",
-	gameImage: ""
+	City: "Pittsburgh, PA"
 }, {
 	username: "marcoE",
 	password: "123",
@@ -54,8 +51,7 @@ const userData = [{
 	minSkillLevel: 1,
 	maxSkillLevel: 5,
 	userBio: "",
-	City: "Philadelphia, PA",
-	gameImage: ""
+	City: "Philadelphia, PA"
 }, {
 	username: "alexC",
 	password: "123",
@@ -68,8 +64,7 @@ const userData = [{
 	minSkillLevel: 1,
 	maxSkillLevel: 5,
 	userBio: "",
-	City: "Pittsburgh, PA",
-	gameImage: ""
+	City: "Pittsburgh, PA"
 }, {
 	username: "andreS",
 	password: "123",
@@ -82,8 +77,7 @@ const userData = [{
 	minSkillLevel: 1,
 	maxSkillLevel: 5,
 	userBio: "",
-	City: "Philadelphia, PA",
-	gameImage: ""
+	City: "Philadelphia, PA"
 }, {
 	username: "andrewH",
 	password: "123",
@@ -96,8 +90,7 @@ const userData = [{
 	minSkillLevel: 1,
 	maxSkillLevel: 5,
 	userBio: "",
-	City: "St. Louis, MO",
-	gameImage: ""
+	City: "St. Louis, MO"
 }, {
 	username: "peteR",
 	password: "123",
@@ -110,8 +103,7 @@ const userData = [{
 	minSkillLevel: 1,
 	maxSkillLevel: 5,
 	userBio: "",
-	City: "Philadelphia, PA",
-	gameImage: ""
+	City: "Philadelphia, PA"
 }, {
 	username: "dbAdmin",
 	password: "123",
@@ -124,8 +116,7 @@ const userData = [{
 	minSkillLevel: 1,
 	maxSkillLevel: 5,
 	userBio: "",
-	City: "Philadelphia, PA",
-	gameImage: ""
+	City: "Philadelphia, PA"
 }, {
 	username: "testUser10",
 	password: "123",
@@ -138,8 +129,7 @@ const userData = [{
 	minSkillLevel: 1,
 	maxSkillLevel: 5,
 	userBio: "",
-	City: "St. Louis, MO",
-	gameImage: ""
+	City: "St. Louis, MO"
 }, {
 	username: "testUser11",
 	password: "123",
@@ -152,8 +142,7 @@ const userData = [{
 	minSkillLevel: 1,
 	maxSkillLevel: 5,
 	userBio: "",
-	City: "Pittsburgh, PA",
-	gameImage: ""
+	City: "Pittsburgh, PA"
 }, {
 	username: "testUser12",
 	password: "123",
@@ -166,8 +155,7 @@ const userData = [{
 	minSkillLevel: 1,
 	maxSkillLevel: 5,
 	userBio: "",
-	City: "Pittsburgh, PA",
-	gameImage: ""
+	City: "Pittsburgh, PA"
 }, {
 	username: "testUser13",
 	password: "123",
@@ -180,8 +168,7 @@ const userData = [{
 	minSkillLevel: 1,
 	maxSkillLevel: 5,
 	userBio: "",
-	City: "Philadelphia, PA",
-	gameImage: ""
+	City: "Philadelphia, PA"
 }, {
 	username: "testUser14",
 	password: "123",
@@ -194,8 +181,7 @@ const userData = [{
 	minSkillLevel: 1,
 	maxSkillLevel: 5,
 	userBio: "",
-	City: "Pittsburgh, PA",
-	gameImage: ""
+	City: "Pittsburgh, PA"
 }, {
 	username: "testUser15",
 	password: "123",
@@ -208,8 +194,7 @@ const userData = [{
 	minSkillLevel: 1,
 	maxSkillLevel: 5,
 	userBio: "",
-	City: "Pittsburgh, PA",
-	gameImage: ""
+	City: "Pittsburgh, PA"
 }, {
 	username: "testUser16",
 	password: "123",
@@ -222,8 +207,7 @@ const userData = [{
 	minSkillLevel: 1,
 	maxSkillLevel: 5,
 	userBio: "",
-	City: "Pittsburgh, PA",
-	gameImage: ""
+	City: "Pittsburgh, PA"
 }, {
 	username: "testUser17",
 	password: "123",
@@ -236,8 +220,7 @@ const userData = [{
 	minSkillLevel: 1,
 	maxSkillLevel: 5,
 	userBio: "",
-	City: "Philadelphia, PA",
-	gameImage: ""
+	City: "Philadelphia, PA"
 }, {
 	username: "testUser18",
 	password: "123",
@@ -250,8 +233,7 @@ const userData = [{
 	minSkillLevel: 1,
 	maxSkillLevel: 5,
 	userBio: "",
-	City: "Philadelphia, PA",
-	gameImage: ""
+	City: "Philadelphia, PA"
 }, {
 	username: "testUser19",
 	password: "123",
@@ -264,8 +246,7 @@ const userData = [{
 	minSkillLevel: 1,
 	maxSkillLevel: 5,
 	userBio: "",
-	City: "Philadelphia, PA",
-	gameImage: ""
+	City: "Philadelphia, PA"
 }, {
 	username: "testUser20",
 	password: "123",
@@ -278,8 +259,7 @@ const userData = [{
 	minSkillLevel: 1,
 	maxSkillLevel: 5,
 	userBio: "",
-	City: "Philadelphia, PA",
-	gameImage: ""
+	City: "Philadelphia, PA"
 }, {
 	username: "testUser21",
 	password: "123",
@@ -292,8 +272,7 @@ const userData = [{
 	minSkillLevel: 1,
 	maxSkillLevel: 5,
 	userBio: "",
-	City: "Pittsburgh, PA",
-	gameImage: ""
+	City: "Pittsburgh, PA"
 }, {
 	username: "testUser22",
 	password: "123",
@@ -306,8 +285,7 @@ const userData = [{
 	minSkillLevel: 1,
 	maxSkillLevel: 5,
 	userBio: "",
-	City: "Philadelphia, PA",
-	gameImage: ""
+	City: "Philadelphia, PA"
 }, {
 	username: "testUser23",
 	password: "123",
@@ -320,8 +298,7 @@ const userData = [{
 	minSkillLevel: 1,
 	maxSkillLevel: 5,
 	userBio: "",
-	City: "Pittsburgh, PA",
-	gameImage: ""
+	City: "Pittsburgh, PA"
 }, {
 	username: "testUser24",
 	password: "123",
@@ -334,8 +311,7 @@ const userData = [{
 	minSkillLevel: 1,
 	maxSkillLevel: 5,
 	userBio: "",
-	City: "Philadelphia, PA",
-	gameImage: ""
+	City: "Philadelphia, PA"
 }, {
 	username: "testUser25",
 	password: "123",
@@ -348,8 +324,7 @@ const userData = [{
 	minSkillLevel: 1,
 	maxSkillLevel: 5,
 	userBio: "",
-	City: "Pittsburgh, PA",
-	gameImage: ""
+	City: "Pittsburgh, PA"
 }, {
 	username: "testUser26",
 	password: "123",
@@ -362,8 +337,7 @@ const userData = [{
 	minSkillLevel: 1,
 	maxSkillLevel: 5,
 	userBio: "",
-	City: "Philadelphia, PA",
-	gameImage: ""
+	City: "Philadelphia, PA"
 }, {
 	username: "testUser27",
 	password: "123",
@@ -376,8 +350,7 @@ const userData = [{
 	minSkillLevel: 1,
 	maxSkillLevel: 5,
 	userBio: "",
-	City: "Philadelphia, PA",
-	gameImage: ""
+	City: "Philadelphia, PA"
 }, {
 	username: "testUser28",
 	password: "123",
@@ -390,8 +363,7 @@ const userData = [{
 	minSkillLevel: 1,
 	maxSkillLevel: 5,
 	userBio: "",
-	City: "St. Louis, MO",
-	gameImage: ""
+	City: "St. Louis, MO"
 }, {
 	username: "testUser29",
 	password: "123",
@@ -404,8 +376,7 @@ const userData = [{
 	minSkillLevel: 1,
 	maxSkillLevel: 5,
 	userBio: "",
-	City: "Philadelphia, PA",
-	gameImage: ""
+	City: "Philadelphia, PA"
 }, {
 	username: "testUser30",
 	password: "123",
@@ -418,8 +389,7 @@ const userData = [{
 	minSkillLevel: 1,
 	maxSkillLevel: 5,
 	userBio: "",
-	City: "Pittsburgh, PA",
-	gameImage: ""
+	City: "Pittsburgh, PA"
 }, {
 	username: "testUser31",
 	password: "123",
@@ -432,8 +402,7 @@ const userData = [{
 	minSkillLevel: 1,
 	maxSkillLevel: 5,
 	userBio: "",
-	City: "Pittsburgh, PA",
-	gameImage: ""
+	City: "Pittsburgh, PA"
 }, {
 	username: "testUser32",
 	password: "123",
@@ -446,8 +415,7 @@ const userData = [{
 	minSkillLevel: 1,
 	maxSkillLevel: 5,
 	userBio: "",
-	City: "Pittsburgh, PA",
-	gameImage: ""
+	City: "Pittsburgh, PA"
 }, {
 	username: "testUser33",
 	password: "123",
@@ -460,8 +428,7 @@ const userData = [{
 	minSkillLevel: 1,
 	maxSkillLevel: 5,
 	userBio: "",
-	City: "St. Louis, MO",
-	gameImage: ""
+	City: "St. Louis, MO"
 }, {
 	username: "testUser34",
 	password: "123",
@@ -474,8 +441,7 @@ const userData = [{
 	minSkillLevel: 1,
 	maxSkillLevel: 5,
 	userBio: "",
-	City: "St. Louis, MO",
-	gameImage: ""
+	City: "St. Louis, MO"
 }, {
 	username: "testUser35",
 	password: "123",
@@ -488,8 +454,7 @@ const userData = [{
 	minSkillLevel: 1,
 	maxSkillLevel: 5,
 	userBio: "",
-	City: "Pittsburgh, PA",
-	gameImage: ""
+	City: "Pittsburgh, PA"
 }, {
 	username: "testUser36",
 	password: "123",
@@ -502,8 +467,7 @@ const userData = [{
 	minSkillLevel: 1,
 	maxSkillLevel: 5,
 	userBio: "",
-	City: "Philadelphia, PA",
-	gameImage: ""
+	City: "Philadelphia, PA"
 }, {
 	username: "testUser37",
 	password: "123",
@@ -516,8 +480,7 @@ const userData = [{
 	minSkillLevel: 1,
 	maxSkillLevel: 5,
 	userBio: "",
-	City: "Pittsburgh, PA",
-	gameImage: ""
+	City: "Pittsburgh, PA"
 }, {
 	username: "testUser38",
 	password: "123",
@@ -530,8 +493,7 @@ const userData = [{
 	minSkillLevel: 1,
 	maxSkillLevel: 5,
 	userBio: "",
-	City: "St. Louis, MO",
-	gameImage: ""
+	City: "St. Louis, MO"
 }, {
 	username: "testUser39",
 	password: "123",
@@ -544,8 +506,7 @@ const userData = [{
 	minSkillLevel: 1,
 	maxSkillLevel: 5,
 	userBio: "",
-	City: "Pittsburgh, PA",
-	gameImage: ""
+	City: "Pittsburgh, PA"
 }, {
 	username: "testUser40",
 	password: "123",
@@ -558,8 +519,7 @@ const userData = [{
 	minSkillLevel: 1,
 	maxSkillLevel: 5,
 	userBio: "",
-	City: "Philadelphia, PA",
-	gameImage: ""
+	City: "Philadelphia, PA"
 }, {
 	username: "testUser41",
 	password: "123",
@@ -572,8 +532,7 @@ const userData = [{
 	minSkillLevel: 1,
 	maxSkillLevel: 5,
 	userBio: "",
-	City: "Pittsburgh, PA",
-	gameImage: ""
+	City: "Pittsburgh, PA"
 }, {
 	username: "testUser42",
 	password: "123",
@@ -586,8 +545,7 @@ const userData = [{
 	minSkillLevel: 1,
 	maxSkillLevel: 5,
 	userBio: "",
-	City: "Pittsburgh, PA",
-	gameImage: ""
+	City: "Pittsburgh, PA"
 }, {
 	username: "testUser43",
 	password: "123",
@@ -600,8 +558,7 @@ const userData = [{
 	minSkillLevel: 1,
 	maxSkillLevel: 5,
 	userBio: "",
-	City: "Pittsburgh, PA",
-	gameImage: ""
+	City: "Pittsburgh, PA"
 }, {
 	username: "testUser44",
 	password: "123",
@@ -614,8 +571,7 @@ const userData = [{
 	minSkillLevel: 1,
 	maxSkillLevel: 5,
 	userBio: "",
-	City: "Pittsburgh, PA",
-	gameImage: ""
+	City: "Pittsburgh, PA"
 }, {
 	username: "testUser45",
 	password: "123",
@@ -628,8 +584,7 @@ const userData = [{
 	minSkillLevel: 1,
 	maxSkillLevel: 5,
 	userBio: "",
-	City: "Philadelphia, PA",
-	gameImage: ""
+	City: "Philadelphia, PA"
 }, {
 	username: "testUser46",
 	password: "123",
@@ -642,8 +597,7 @@ const userData = [{
 	minSkillLevel: 1,
 	maxSkillLevel: 5,
 	userBio: "",
-	City: "Philadelphia, PA",
-	gameImage: ""
+	City: "Philadelphia, PA"
 }, {
 	username: "testUser47",
 	password: "123",
@@ -656,8 +610,7 @@ const userData = [{
 	minSkillLevel: 1,
 	maxSkillLevel: 5,
 	userBio: "",
-	City: "Pittsburgh, PA",
-	gameImage: ""
+	City: "Pittsburgh, PA"
 }, {
 	username: "testUser48",
 	password: "123",
@@ -670,8 +623,7 @@ const userData = [{
 	minSkillLevel: 1,
 	maxSkillLevel: 5,
 	userBio: "",
-	City: "Philadelphia, PA",
-	gameImage: ""
+	City: "Philadelphia, PA"
 }, {
 	username: "testUser49",
 	password: "123",
@@ -684,8 +636,7 @@ const userData = [{
 	minSkillLevel: 1,
 	maxSkillLevel: 5,
 	userBio: "",
-	City: "Pittsburgh, PA",
-	gameImage: ""
+	City: "Pittsburgh, PA"
 }, {
 	username: "testUser50",
 	password: "123",
@@ -698,8 +649,7 @@ const userData = [{
 	minSkillLevel: 1,
 	maxSkillLevel: 5,
 	userBio: "",
-	City: "Philadelphia, PA",
-	gameImage: ""
+	City: "Philadelphia, PA"
 }, {
 	username: "testUser51",
 	password: "123",
@@ -712,8 +662,7 @@ const userData = [{
 	minSkillLevel: 1,
 	maxSkillLevel: 5,
 	userBio: "",
-	City: "Philadelphia, PA",
-	gameImage: ""
+	City: "Philadelphia, PA"
 }, {
 	username: "testUser52",
 	password: "123",
@@ -726,8 +675,7 @@ const userData = [{
 	minSkillLevel: 1,
 	maxSkillLevel: 5,
 	userBio: "",
-	City: "Philadelphia, PA",
-	gameImage: ""
+	City: "Philadelphia, PA"
 }, {
 	username: "testUser53",
 	password: "123",
@@ -740,8 +688,7 @@ const userData = [{
 	minSkillLevel: 1,
 	maxSkillLevel: 5,
 	userBio: "",
-	City: "Pittsburgh, PA",
-	gameImage: ""
+	City: "Pittsburgh, PA"
 }, {
 	username: "testUser54",
 	password: "123",
@@ -754,8 +701,7 @@ const userData = [{
 	minSkillLevel: 1,
 	maxSkillLevel: 5,
 	userBio: "",
-	City: "Pittsburgh, PA",
-	gameImage: ""
+	City: "Pittsburgh, PA"
 }, {
 	username: "testUser55",
 	password: "123",
@@ -768,8 +714,7 @@ const userData = [{
 	minSkillLevel: 1,
 	maxSkillLevel: 5,
 	userBio: "",
-	City: "St. Louis, MO",
-	gameImage: ""
+	City: "St. Louis, MO"
 }, {
 	username: "testUser56",
 	password: "123",
@@ -782,8 +727,7 @@ const userData = [{
 	minSkillLevel: 1,
 	maxSkillLevel: 5,
 	userBio: "",
-	City: "Pittsburgh, PA",
-	gameImage: ""
+	City: "Pittsburgh, PA"
 }, {
 	username: "testUser57",
 	password: "123",
@@ -796,8 +740,7 @@ const userData = [{
 	minSkillLevel: 1,
 	maxSkillLevel: 5,
 	userBio: "",
-	City: "St. Louis, MO",
-	gameImage: ""
+	City: "St. Louis, MO"
 }, {
 	username: "testUser58",
 	password: "123",
@@ -810,8 +753,7 @@ const userData = [{
 	minSkillLevel: 1,
 	maxSkillLevel: 5,
 	userBio: "",
-	City: "Philadelphia, PA",
-	gameImage: ""
+	City: "Philadelphia, PA"
 }, {
 	username: "testUser59",
 	password: "123",
@@ -824,8 +766,7 @@ const userData = [{
 	minSkillLevel: 1,
 	maxSkillLevel: 5,
 	userBio: "",
-	City: "Pittsburgh, PA",
-	gameImage: ""
+	City: "Pittsburgh, PA"
 }, {
 	username: "testUser60",
 	password: "123",
@@ -838,8 +779,7 @@ const userData = [{
 	minSkillLevel: 1,
 	maxSkillLevel: 5,
 	userBio: "",
-	City: "Philadelphia, PA",
-	gameImage: ""
+	City: "Philadelphia, PA"
 }, {
 	username: "testUser61",
 	password: "123",
@@ -852,8 +792,7 @@ const userData = [{
 	minSkillLevel: 1,
 	maxSkillLevel: 5,
 	userBio: "",
-	City: "Pittsburgh, PA",
-	gameImage: ""
+	City: "Pittsburgh, PA"
 }, {
 	username: "testUser62",
 	password: "123",
@@ -866,8 +805,7 @@ const userData = [{
 	minSkillLevel: 1,
 	maxSkillLevel: 5,
 	userBio: "",
-	City: "St. Louis, MO",
-	gameImage: ""
+	City: "St. Louis, MO"
 }, {
 	username: "testUser63",
 	password: "123",
@@ -880,8 +818,7 @@ const userData = [{
 	minSkillLevel: 1,
 	maxSkillLevel: 5,
 	userBio: "",
-	City: "Pittsburgh, PA",
-	gameImage: ""
+	City: "Pittsburgh, PA"
 }, {
 	username: "testUser64",
 	password: "123",
@@ -894,8 +831,7 @@ const userData = [{
 	minSkillLevel: 1,
 	maxSkillLevel: 5,
 	userBio: "",
-	City: "Philadelphia, PA",
-	gameImage: ""
+	City: "Philadelphia, PA"
 }, {
 	username: "testUser65",
 	password: "123",
@@ -908,8 +844,7 @@ const userData = [{
 	minSkillLevel: 1,
 	maxSkillLevel: 5,
 	userBio: "",
-	City: "Pittsburgh, PA",
-	gameImage: ""
+	City: "Pittsburgh, PA"
 }, {
 	username: "testUser66",
 	password: "123",
@@ -922,8 +857,7 @@ const userData = [{
 	minSkillLevel: 1,
 	maxSkillLevel: 5,
 	userBio: "",
-	City: "Pittsburgh, PA",
-	gameImage: ""
+	City: "Pittsburgh, PA"
 }, {
 	username: "testUser67",
 	password: "123",
@@ -936,8 +870,7 @@ const userData = [{
 	minSkillLevel: 1,
 	maxSkillLevel: 5,
 	userBio: "",
-	City: "Pittsburgh, PA",
-	gameImage: ""
+	City: "Pittsburgh, PA"
 }, {
 	username: "testUser68",
 	password: "123",
@@ -950,8 +883,7 @@ const userData = [{
 	minSkillLevel: 1,
 	maxSkillLevel: 5,
 	userBio: "",
-	City: "Pittsburgh, PA",
-	gameImage: ""
+	City: "Pittsburgh, PA"
 }, {
 	username: "testUser69",
 	password: "123",
@@ -964,8 +896,7 @@ const userData = [{
 	minSkillLevel: 1,
 	maxSkillLevel: 5,
 	userBio: "",
-	City: "St. Louis, MO",
-	gameImage: ""
+	City: "St. Louis, MO"
 }, {
 	username: "testUser70",
 	password: "123",
@@ -978,8 +909,7 @@ const userData = [{
 	minSkillLevel: 1,
 	maxSkillLevel: 5,
 	userBio: "",
-	City: "Pittsburgh, PA",
-	gameImage: ""
+	City: "Pittsburgh, PA"
 }, {
 	username: "testUser71",
 	password: "123",
@@ -992,8 +922,7 @@ const userData = [{
 	minSkillLevel: 1,
 	maxSkillLevel: 5,
 	userBio: "",
-	City: "Philadelphia, PA",
-	gameImage: ""
+	City: "Philadelphia, PA"
 }, {
 	username: "testUser72",
 	password: "123",
@@ -1006,8 +935,7 @@ const userData = [{
 	minSkillLevel: 1,
 	maxSkillLevel: 5,
 	userBio: "",
-	City: "Philadelphia, PA",
-	gameImage: ""
+	City: "Philadelphia, PA"
 }, {
 	username: "testUser73",
 	password: "123",
@@ -1020,8 +948,7 @@ const userData = [{
 	minSkillLevel: 1,
 	maxSkillLevel: 5,
 	userBio: "",
-	City: "Pittsburgh, PA",
-	gameImage: ""
+	City: "Pittsburgh, PA"
 }, {
 	username: "testUser74",
 	password: "123",
@@ -1034,8 +961,7 @@ const userData = [{
 	minSkillLevel: 1,
 	maxSkillLevel: 5,
 	userBio: "",
-	City: "Pittsburgh, PA",
-	gameImage: ""
+	City: "Pittsburgh, PA"
 }, {
 	username: "testUser75",
 	password: "123",
@@ -1048,8 +974,7 @@ const userData = [{
 	minSkillLevel: 1,
 	maxSkillLevel: 5,
 	userBio: "",
-	City: "Pittsburgh, PA",
-	gameImage: ""
+	City: "Pittsburgh, PA"
 }, {
 	username: "testUser76",
 	password: "123",
@@ -1062,8 +987,7 @@ const userData = [{
 	minSkillLevel: 1,
 	maxSkillLevel: 5,
 	userBio: "",
-	City: "Pittsburgh, PA",
-	gameImage: ""
+	City: "Pittsburgh, PA"
 }, {
 	username: "testUser77",
 	password: "123",
@@ -1076,8 +1000,7 @@ const userData = [{
 	minSkillLevel: 1,
 	maxSkillLevel: 5,
 	userBio: "",
-	City: "Philadelphia, PA",
-	gameImage: ""
+	City: "Philadelphia, PA"
 }, {
 	username: "testUser78",
 	password: "123",
@@ -1090,8 +1013,7 @@ const userData = [{
 	minSkillLevel: 1,
 	maxSkillLevel: 5,
 	userBio: "",
-	City: "Pittsburgh, PA",
-	gameImage: ""
+	City: "Pittsburgh, PA"
 }, {
 	username: "testUser79",
 	password: "123",
@@ -1104,8 +1026,7 @@ const userData = [{
 	minSkillLevel: 1,
 	maxSkillLevel: 5,
 	userBio: "",
-	City: "St. Louis, MO",
-	gameImage: ""
+	City: "St. Louis, MO"
 }, {
 	username: "testUser80",
 	password: "123",
@@ -1118,8 +1039,7 @@ const userData = [{
 	minSkillLevel: 1,
 	maxSkillLevel: 5,
 	userBio: "",
-	City: "Pittsburgh, PA",
-	gameImage: ""
+	City: "Pittsburgh, PA"
 }, {
 	username: "testUser81",
 	password: "123",
@@ -1132,8 +1052,7 @@ const userData = [{
 	minSkillLevel: 1,
 	maxSkillLevel: 5,
 	userBio: "",
-	City: "Test User City, USA",
-	gameImage: ""
+	City: "Test User City, USA"
 }, {
 	username: "testUser82",
 	password: "123",
@@ -1146,8 +1065,7 @@ const userData = [{
 	minSkillLevel: 1,
 	maxSkillLevel: 5,
 	userBio: "",
-	City: "Test User City, USA",
-	gameImage: ""
+	City: "Test User City, USA"
 }, {
 	username: "testUser83",
 	password: "123",
@@ -1160,8 +1078,7 @@ const userData = [{
 	minSkillLevel: 1,
 	maxSkillLevel: 5,
 	userBio: "",
-	City: "Test User City, USA",
-	gameImage: ""
+	City: "Test User City, USA"
 }, {
 	username: "testUser84",
 	password: "123",
@@ -1174,8 +1091,7 @@ const userData = [{
 	minSkillLevel: 1,
 	maxSkillLevel: 5,
 	userBio: "",
-	City: "Test User City, USA",
-	gameImage: ""
+	City: "Test User City, USA"
 }, {
 	username: "testUser85",
 	password: "123",
@@ -1188,8 +1104,7 @@ const userData = [{
 	minSkillLevel: 1,
 	maxSkillLevel: 5,
 	userBio: "",
-	City: "Test User City, USA",
-	gameImage: ""
+	City: "Test User City, USA"
 }, {
 	username: "testUser86",
 	password: "123",
@@ -1202,8 +1117,7 @@ const userData = [{
 	minSkillLevel: 1,
 	maxSkillLevel: 5,
 	userBio: "",
-	City: "Test User City, USA",
-	gameImage: ""
+	City: "Test User City, USA"
 }, {
 	username: "testUser87",
 	password: "123",
@@ -1216,8 +1130,7 @@ const userData = [{
 	minSkillLevel: 1,
 	maxSkillLevel: 5,
 	userBio: "",
-	City: "Test User City, USA",
-	gameImage: ""
+	City: "Test User City, USA"
 }, {
 	username: "testUser88",
 	password: "123",
@@ -1230,8 +1143,7 @@ const userData = [{
 	minSkillLevel: 1,
 	maxSkillLevel: 5,
 	userBio: "",
-	City: "Test User City, USA",
-	gameImage: ""
+	City: "Test User City, USA"
 }, {
 	username: "testUser89",
 	password: "123",
@@ -1244,8 +1156,7 @@ const userData = [{
 	minSkillLevel: 1,
 	maxSkillLevel: 5,
 	userBio: "",
-	City: "Test User City, USA",
-	gameImage: ""
+	City: "Test User City, USA"
 }, {
 	username: "testUser90",
 	password: "123",
@@ -1258,8 +1169,7 @@ const userData = [{
 	minSkillLevel: 1,
 	maxSkillLevel: 5,
 	userBio: "",
-	City: "Test User City, USA",
-	gameImage: ""
+	City: "Test User City, USA"
 }, {
 	username: "testUser91",
 	password: "123",
@@ -1272,8 +1182,7 @@ const userData = [{
 	minSkillLevel: 1,
 	maxSkillLevel: 5,
 	userBio: "",
-	City: "Test User City, USA",
-	gameImage: ""
+	City: "Test User City, USA"
 }, {
 	username: "testUser92",
 	password: "123",
@@ -1286,8 +1195,7 @@ const userData = [{
 	minSkillLevel: 1,
 	maxSkillLevel: 5,
 	userBio: "",
-	City: "Harrisburg, PA",
-	gameImage: ""
+	City: "Harrisburg, PA"
 }, {
 	username: "testUser93",
 	password: "123",
@@ -1300,8 +1208,7 @@ const userData = [{
 	minSkillLevel: 1,
 	maxSkillLevel: 5,
 	userBio: "",
-	City: "Harrisburg, PA",
-	gameImage: ""
+	City: "Harrisburg, PA"
 }, {
 	username: "testUser94",
 	password: "123",
@@ -1314,8 +1221,7 @@ const userData = [{
 	minSkillLevel: 1,
 	maxSkillLevel: 5,
 	userBio: "",
-	City: "Harrisburg, PA",
-	gameImage: ""
+	City: "Harrisburg, PA"
 }, {
 	username: "testUser95",
 	password: "123",
@@ -1328,8 +1234,7 @@ const userData = [{
 	minSkillLevel: 1,
 	maxSkillLevel: 5,
 	userBio: "",
-	City: "Harrisburg, PA",
-	gameImage: ""
+	City: "Harrisburg, PA"
 }, {
 	username: "testUser96",
 	password: "123",
@@ -1342,8 +1247,7 @@ const userData = [{
 	minSkillLevel: 1,
 	maxSkillLevel: 5,
 	userBio: "",
-	City: "Harrisburg, PA",
-	gameImage: ""
+	City: "Harrisburg, PA"
 }, {
 	username: "testUser97",
 	password: "123",
@@ -1356,8 +1260,7 @@ const userData = [{
 	minSkillLevel: 1,
 	maxSkillLevel: 5,
 	userBio: "",
-	City: "Harrisburg, PA",
-	gameImage: ""
+	City: "Harrisburg, PA"
 }, {
 	username: "testUser98",
 	password: "123",
@@ -1370,8 +1273,7 @@ const userData = [{
 	minSkillLevel: 1,
 	maxSkillLevel: 5,
 	userBio: "",
-	City: "Harrisburg, PA",
-	gameImage: ""
+	City: "Harrisburg, PA"
 }, {
 	username: "testUser99",
 	password: "123",
@@ -1384,8 +1286,7 @@ const userData = [{
 	minSkillLevel: 1,
 	maxSkillLevel: 5,
 	userBio: "",
-	City: "Harrisburg, PA",
-	gameImage: ""
+	City: "Harrisburg, PA"
 }, {
 	username: "testUser100",
 	password: "123",
@@ -1398,8 +1299,7 @@ const userData = [{
 	minSkillLevel: 1,
 	maxSkillLevel: 5,
 	userBio: "",
-	City: "Test User City, USA",
-	gameImage: ""
+	City: "Test User City, USA"
 }, {
 	username: "testUser101",
 	password: "123",
@@ -1412,8 +1312,7 @@ const userData = [{
 	minSkillLevel: 1,
 	maxSkillLevel: 5,
 	userBio: "",
-	City: "Test User City, USA",
-	gameImage: ""
+	City: "Test User City, USA"
 }, {
 	username: "testUser102",
 	password: "123",
@@ -1426,8 +1325,7 @@ const userData = [{
 	minSkillLevel: 1,
 	maxSkillLevel: 5,
 	userBio: "",
-	City: "Test User City, USA",
-	gameImage: ""
+	City: "Test User City, USA"
 }, {
 	username: "apiAddedUser1",
 	password: "123",
@@ -1440,8 +1338,7 @@ const userData = [{
 	minSkillLevel: 1,
 	maxSkillLevel: 5,
 	userBio: "",
-	City: "St. Louis, MO",
-	gameImage: ""
+	City: "St. Louis, MO"
 }];
 
 const seedUsers = () => User.bulkCreate(userData, {individualHooks: true});

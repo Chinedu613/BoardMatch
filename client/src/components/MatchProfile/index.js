@@ -11,7 +11,7 @@ import axios from 'axios';
 export default function MatchProfile() {
 
 
-    const { data, isLoading, error } = useQuery('users', () => axios.get('/api/users').then((res) => res.data));
+    const { data, isLoading, error } = useQuery('users', () => axios.get('/api/matchtransactions').then((res) => res.data));
     if (isLoading) return (<div style={{ color: "white" }}>Is Loading...</div>)
     if (error) return (<div style={{ color: "white" }}>An error has occurred:</div>)
 
