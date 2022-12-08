@@ -24,7 +24,7 @@
     "bcrypt": "^5.0.1",
     "connect-session-sequelize": "^7.1.1",
     "dotenv": "^8.6.0",
-    "express": "^4.16.3",
+    "express": "^4.18.2",
     "express-session": "^1.17.2",
     "if-env": "^1.0.4",
     "mysql2": "^2.2.5",
