@@ -29,6 +29,6 @@
     "if-env": "^1.0.4",
     "mysql2": "^2.2.5",
     "react-query": "^3.16.0",
-    "sequelize": "^6.6.2"
+    "sequelize": "^6.28.2"
   }
 }
